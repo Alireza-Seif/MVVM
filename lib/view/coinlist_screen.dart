@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
 import 'package:mvvm/view_model/coinlist_viewmmodel.dart';
 import 'package:provider/provider.dart';
 
@@ -10,7 +11,7 @@ class CoinListScreen extends StatefulWidget {
 }
 
 class _CoinListScreenState extends State<CoinListScreen> {
-  final _viewMModel = CoinlistViewmodel();
+  final _viewMModel = GetIt.I.get<CoinlistViewmodel>();
 
   @override
   void initState() {

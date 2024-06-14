@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:mvvm/di/service_locator.dart';
 import 'package:mvvm/view/coinlist_screen.dart';
 
 void main() {
+  initServiceLocaator();
   runApp(const MyApp());
 }
 
